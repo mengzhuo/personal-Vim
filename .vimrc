@@ -1,10 +1,11 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
-
+filetype on
 filetype plugin on
+filetype plugin indent on
 let g:pydiction_location = '/home/meng/.vim/after/ftplugin/pydiction/complete-dict'
 
-filetype plugin indent on
+
 set autoindent " same level indent
 set smartindent " next level indent
 set expandtab
@@ -17,7 +18,12 @@ set modeline
 syntax on                           " syntax highlighing
 "colorscheme tango
 "filetype on                          " try to detect filetypes
-au FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 set fileformats=unix
