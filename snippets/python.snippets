@@ -3,7 +3,7 @@ snippet log
 	logger = logging.getLogger(__name__)
 
 snippet se
-	self.
+	self.${1:content}
 
 snippet #!
 	#!/usr/bin/python
@@ -90,19 +90,19 @@ snippet try Try/Except(with Logger)
 	try:
 		${1:pass}
 	except ${2:Exception}, ${3:e}:
-		${4:logger.error($3)}
+		logger.${4:error}($3)
 snippet try Try/Except/Else(with Logger)
 	try:
 		${1:pass}
 	except ${2:Exception}, ${3:e}:
-		${4:logger.error($3)}
+		logger.${4:error}($3)
 	else:
 		${5:pass}
 snippet try Try/Except/Finally(with Logger)
 	try:
 		${1:pass}
 	except ${2:Exception}, ${3:e}:
-		${4:logger.error($3)}
+		logger.${4:error}($3)
 	finally:
 		${5:pass}
 snippet try Try/Except/Else/Finally(with Logger)
