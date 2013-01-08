@@ -4,6 +4,9 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "molokai"]
-	path = molokai
-	url = git://github.com/tomasr/molokai.git
+[submodule "bundle/super-tab"]
+	path = bundle/super-tab
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = git://github.com/davidhalter/jedi-vim.git
