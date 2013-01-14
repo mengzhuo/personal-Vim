@@ -21,7 +21,9 @@ set foldlevel=99
 
 set number
 
-colorscheme delek
+colorscheme tango
+highlight Pmenu    guibg=darkgrey  guifg=black
+highlight PmenuSel guibg=lightgrey guifg=black
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -30,6 +32,8 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 "jedi settings
 let g:jedi#show_function_definition = "0"
+let g:jedi#use_tabs_not_buffers = 0
+let g:jedi#autocompletion_command = "<c-space>"
 
 "superTab settings
 let g:SuperTabDefaultCompletionType = "context"
