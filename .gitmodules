@@ -18,4 +18,4 @@
 	url = git://github.com/kien/ctrlp.vim.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
+	url = git://github.com/garbas/vim-snipmate.git
