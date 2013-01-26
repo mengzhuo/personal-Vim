@@ -14,3 +14,5 @@ Mainly focus on *Django/Python* developement
         ```apt-get install pylint```
 + exuberant-ctags
         ```apt-get install exuberant-ctags```
++ jedi
+        ```sudo pip install jedi```
