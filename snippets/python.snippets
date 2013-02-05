@@ -1,8 +1,8 @@
 snippet log
 	import logging
 	logger = logging.getLogger(__name__)
-snippet utf8
-    # -*- coding: utf-8 -*-s
+snippet #u8
+	# -*- coding: utf-8 -*-s
 snippet *
 	*args
 snippet **
@@ -75,3 +75,8 @@ snippet deff
 snippet defs
 	def ${1:mname}(self, ${2:arg}):
 		${3:pass}
+
+# if __name__ == '__main__':
+snippet ifmain
+	if __name__ == '__name__main__':
+		${1:main()}

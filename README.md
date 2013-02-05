@@ -8,6 +8,7 @@ Mainly focus on *Django/Python* developement
 + Jedi for Python completion doc/source browsing
 + Synatax for Python synatax check
 + CtrlP for file browsing
++ PEP8 for PEP8 check
 
 ## Requirement
 + pylint
@@ -16,3 +17,5 @@ Mainly focus on *Django/Python* developement
         ```apt-get install exuberant-ctags```
 + jedi
         ```sudo pip install jedi```
++ pep8
+        ```sudo pip install pep8```
