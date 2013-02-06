@@ -14,6 +14,7 @@ set shiftwidth=4
 set softtabstop=4
 set modeline
 set hlsearch
+set textwidth=79
 
 set completeopt=menuone,longest,preview
 set fileformats=unix
@@ -45,7 +46,7 @@ let g:SuperTabContextDefaultCompletionType = "<c-n>"
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'rca'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.svn,.git*     " Linux/MacOSX
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.svn,.git*,*pyc     " Linux/MacOSX
 
 let g:snips_author='Meng Zhuo'
 let g:solarized_termcolors=256
