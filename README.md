@@ -1,7 +1,7 @@
 ## Introduction
-This is my personal Vim configuration
+This is my personal Vim configuration/Repo
 
-Mainly focus on *Django/Python* developement
+It focus on *Django/Python* developement
 
 ## Highlights
 + SuperTab for autocompletion
