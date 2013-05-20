@@ -28,3 +28,6 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/rst-table"]
+	path = bundle/rst-table
+	url = git://github.com/vim-scripts/rst-tables--Chao.git
