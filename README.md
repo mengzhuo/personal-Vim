@@ -6,13 +6,13 @@ It focus on *Django/Python* developement
 ## Highlights
 + SuperTab for autocompletion
 + Jedi for Python completion doc/source browsing
-+ Synatax for Python synatax check
++ Synatax & pyflakes for Python synatax check
 + CtrlP for file browsing
 + PEP8 for PEP8 check
 
 ## Requirement
-+ pylint
-        ```apt-get install pylint```
++ pyflakes
+        ```sudo pip install pyflakes```
 + exuberant-ctags
         ```apt-get install exuberant-ctags```
 + jedi

@@ -50,3 +50,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.svn,.git*,*pyc     " Linux/MacOSX
 
 let g:snips_author='Meng Zhuo'
 let g:solarized_termcolors=256
+
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+
+set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
