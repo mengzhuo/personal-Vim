@@ -30,9 +30,9 @@ highlight Pmenu    guibg=Blue  guifg=White ctermbg=Blue ctermfg=White
 highlight PmenuSel guibg=White guifg=Blue ctermbg=White ctermfg=Blue
 
 "jedi settings
-let g:jedi#show_function_definition = 1
+let g:jedi#show_call_signatures = 1
 let g:jedi#use_tabs_not_buffers = 0
-let g:jedi#autocompletion_command = "<c-n>"
+let g:jedi#completions_command = "<c-n>"
 
 "superTab settings
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
@@ -56,3 +56,8 @@ let g:syntastic_python_checkers=['pyflakes']
 " PowerLine
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
+
+" Buffer shortcut
+
+nmap <C-j> bn
+nmap <C-k> bp
