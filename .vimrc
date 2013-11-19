@@ -48,6 +48,9 @@ let g:ctrlp_working_path_mode = 'rca'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.svn,.git*,*pyc     " Linux/MacOSX
 
 
+" js vim
+let g:javascript_conceal=1
+
 set encoding=utf-8
 let g:solarized_termcolors=256
 " Python Checks
