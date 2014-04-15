@@ -15,8 +15,7 @@ set shiftwidth=4
 set softtabstop=4
 set modeline
 set hlsearch
-
-
+set backspace=indent,eol,start
 set completeopt=menu,longest,preview
 
 set fileformats=unix
@@ -25,7 +24,7 @@ set foldlevel=99
 
 set relativenumber
 
-colorscheme tango
+colorscheme molokai
 highlight Pmenu    guibg=Blue  guifg=White ctermbg=Blue ctermfg=White
 highlight PmenuSel guibg=White guifg=Blue ctermbg=White ctermfg=Blue
 
@@ -79,7 +78,7 @@ let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_symbols.whitespace = ' '
 let g:bufferline_echo = 0
 
 " Buffer shortcut
