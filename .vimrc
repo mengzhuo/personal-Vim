@@ -25,6 +25,7 @@ set foldlevel=99
 set relativenumber
 
 colorscheme molokai
+set background=dark
 highlight Pmenu    guibg=Blue  guifg=White ctermbg=Blue ctermfg=White
 highlight PmenuSel guibg=White guifg=Blue ctermbg=White ctermfg=Blue
 
