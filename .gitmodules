@@ -34,3 +34,6 @@
 [submodule "bundle/distinguished"]
 	path = bundle/distinguished
 	url = https://github.com/Lokaltog/vim-distinguished.git
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
