@@ -37,6 +37,3 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "bundle/go.vim"]
-	path = bundle/go.vim
-	url = https://github.com/golangtw/go.vim.git
