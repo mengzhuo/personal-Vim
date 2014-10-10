@@ -1,11 +1,26 @@
+set nocompatible
 filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-call pathogen#infect()
 
-syntax on                           " syntax highlighing
-filetype on
-filetype plugin on
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tomasr/molokai'
+Plugin 'honza/vim-snippets'
+Plugin 'bling/vim-airline'
+Plugin 'SirVer/ultisnips'
+Plugin 'fatih/vim-go'
+Plugin 'vim-jp/vim-go-extra'
+
+call vundle#end()
+
 filetype plugin indent on
 
 set autoindent " same level indent
@@ -25,19 +40,12 @@ set foldlevel=99
 
 set relativenumber
 
-colorscheme molokai
-set background=dark
 highlight Pmenu    guibg=Blue  guifg=White ctermbg=Blue ctermfg=White
 highlight PmenuSel guibg=White guifg=Blue ctermbg=White ctermfg=Blue
-
-"jedi settings
-let g:jedi#show_call_signatures = 1
-let g:jedi#use_tabs_not_buffers = 0
-let g:jedi#completions_command = "<C-L>"
-
-"superTab settings
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
+" Go
+set rtp+=$GOROOT/misc/vim
+let g:go_bin_path = expand("~/.gotools")
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 "ctrlP settings
 let g:ctrlp_map = '<c-p>'
@@ -47,8 +55,14 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.svn,.git*,*pyc     " Linux/MacOSX
 
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
+let g:UltiSnipsExpandTrigger="<c-g>"
+let g:UltiSnipsJumpForwardTrigger="<c-g>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 set encoding=utf-8
 let g:solarized_termcolors=256
+
+
 
 " Python Checks
 let g:syntastic_python_checkers=['pyflakes']
