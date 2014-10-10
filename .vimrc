@@ -18,6 +18,7 @@ Plugin 'bling/vim-airline'
 Plugin 'SirVer/ultisnips'
 Plugin 'fatih/vim-go'
 Plugin 'vim-jp/vim-go-extra'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 call vundle#end()
 
