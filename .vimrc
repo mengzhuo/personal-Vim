@@ -19,6 +19,8 @@ Plugin 'SirVer/ultisnips'
 Plugin 'fatih/vim-go'
 Plugin 'vim-jp/vim-go-extra'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'rking/ag.vim'
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 
@@ -67,6 +69,11 @@ let g:solarized_termcolors=256
 
 " Python Checks
 let g:syntastic_python_checkers=['pyflakes']
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_auto_loc_list=2
+
+nnoremap <leader>g :YcmCompleter GoTo<CR>
 
 " Airline
 set t_Co=256
